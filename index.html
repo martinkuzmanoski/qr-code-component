@@ -8,20 +8,51 @@
   
   <title>Frontend Mentor | QR code component</title>
 
+  <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .maindiv {
       height: 497px;
       width: 320px;
-      background-color: hsl(228, 45%, 44%);
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .qr-code-img {
+      height: 288px;
+      width: 288px;
+      border-radius: 10px;
+    }
+    .qr-img-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 320px;
     }
   </style>
 </head>
 <body>
-  <div class="maindiv"></div>
-  <div></div>
+  <div class="maindiv">
+    <div class="qr-img-text">
+      <img class="qr-code-img" src="images/image-qr-code.png" alt="qr-code">
+    </div>
+    <div>
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
   
   Improve your front-end skills by building projects
 
@@ -29,7 +60,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Martin Kuzmanoski</a>.
   </div>
 </body>
 </html>
