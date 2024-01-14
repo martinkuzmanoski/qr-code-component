@@ -12,55 +12,67 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+    }
     body {
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(212, 45%, 89%);
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: hsl(212, 45%, 89%);
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .maindiv {
-      height: 497px;
+    .container {
       width: 320px;
-      background-color: hsl(0, 0%, 100%);
-      border-radius: 20px;
+      height: 473px;
       display: flex;
       flex-direction: column;
+      border-radius: 20px;
+      background-color: hsl(0, 0%, 100%);
     }
-    .qr-code-img {
-      height: 288px;
+    img {
       width: 288px;
-      border-radius: 10px;
+      margin: 16px;
+      border-radius: 20px;
     }
-    .qr-img-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    p {
+      color: hsl(220, 15%, 55%);
+    }
+    .top-container {
       height: 320px;
+    }
+    .bottom-container {
+      flex: 1;
+      margin: auto 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 0 18px;
+    }
+    h2 {
+      padding-bottom: 10px;
+    }
+    @media (max-width: 375px) {
+        .container {
+        height: 497px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="maindiv">
-    <div class="qr-img-text">
-      <img class="qr-code-img" src="images/image-qr-code.png" alt="qr-code">
+  <div class="container">
+    <div class="top-container">
+      <img src="images/image-qr-code.png" alt="qr-code">
     </div>
-    <div>
-      <h1>Improve your front-end skills by building projects</h1>
+    <div class="bottom-container">
+      <h2>Improve your front-end skills by building projects</h2>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
-  </div>
-  
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Martin Kuzmanoski</a>.
   </div>
 </body>
 </html>
